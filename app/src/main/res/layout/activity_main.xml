@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LoginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:text="Welcome To Login"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="50dp"
+        android:textStyle="bold|italic"
+        app:fontFamily="@font/bangers"
+        app:layout_constraintBottom_toTopOf="@+id/UserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="157dp"
+        android:padding="10dp"
+        android:text="USER NAME : "
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/userNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginTitle" />
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="233dp"
+        android:layout_height="57dp"
+        android:layout_alignTop="@+id/UserName"
+        android:layout_toEndOf="@+id/UserName"
+        android:ems="10"
+        android:hint="Please Enter User Name"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColorHint="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="@+id/pwdEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/UserName"
+        app:layout_constraintTop_toTopOf="@+id/LoginTitle" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:text="PASSWORD : "
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toStartOf="@+id/pwdEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserName" />
+
+    <EditText
+        android:id="@+id/pwdEditText"
+        android:layout_width="237dp"
+        android:layout_height="58dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:ems="10"
+        android:hint="Please enter Password"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColorHint="@android:color/holo_red_light"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="148dp"
+        android:layout_height="58dp"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="139dp"
+        android:layout_marginEnd="-15dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Sign In"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerLink"
+        app:layout_constraintEnd_toStartOf="@+id/resetbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="148dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/loginbutton"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="RESET"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/loginbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loginbutton" />
+
+    <TextView
+        android:id="@+id/registerLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:text="New User ? Sign Up Here.Click."
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/holo_red_light"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />
+
+</RelativeLayout>

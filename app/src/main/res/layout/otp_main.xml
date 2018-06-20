@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="OTP  VERIFICATION"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/verifyBTN"
+        android:layout_width="230dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="176dp"
+        android:text="VERIFY"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/otpET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="181dp"
+        android:ems="10"
+        android:hint="enter OTP"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/otpET"
+        android:layout_marginStart="16dp"
+        android:text="ENTER OTP :"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+
+
